@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import Navbar from "./components/Navbar";
 import MainContainer from "./components/MainContainer";
 import Browse from './pages/Browse'
