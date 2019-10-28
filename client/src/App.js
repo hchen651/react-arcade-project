@@ -16,11 +16,9 @@ import Routes from './components/Routes';
 
 function App() {
   return (
-    <Container fluid="true">
-      <Router>
-        <Routes />
-      </Router>
-    </Container>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 

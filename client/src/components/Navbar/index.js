@@ -5,23 +5,21 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import './style.css';
 
 class NavBar extends React.Component {
-    render () {
+    render() {
         return (
-            <div>
-                <Navbar bg="light">
-                    <Navbar.Brand href="#home">Game Spot</Navbar.Brand>
-                    <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                        <Nav>
-                            <NavDropdown title="User Name" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="profile">Profile</NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#logout">Log Out</NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            </div>
+            <Navbar bg="light">
+                <Navbar.Brand href="#home">Game Spot</Navbar.Brand>
+                <Navbar.Toggle />
+                <Navbar.Collapse className="justify-content-end">
+                    <Nav>
+                        <NavDropdown title="User Name" id="collasible-nav-dropdown">
+                            <NavDropdown.Item href="profile">Profile</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="#logout">Log Out</NavDropdown.Item>
+                        </NavDropdown>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
         );
     }
 }
