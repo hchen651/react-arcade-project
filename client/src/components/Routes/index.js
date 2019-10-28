@@ -8,7 +8,7 @@ import GameInterface from "../../pages/GameInterface";
 import User from "../../pages/User";
 import About from "../../pages/About";
 
-export default class AllRoutes extends Component {
+export default class Routes extends Component {
     render() {
         return (
             <Switch>

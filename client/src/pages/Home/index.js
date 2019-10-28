@@ -1,5 +1,9 @@
 import React from 'react';
+
+//react-bootstrap Components
 import NavBar from '../../components/Navbar';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Button from 'react-bootstrap/Button'
 
 class Home extends React.Component {
     render() {
