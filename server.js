@@ -1,13 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const passport = require("passport");
 const path = require("path");
-//const multer = require('multer');
-//const upload = multer({dest:__dirname + '/uploads/images'});
-
 const routes = require("./routes");
-//const users = require("./routes/api/users");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -42,24 +37,6 @@ mongoose
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
 
-//Alternative MongoDB connection, Commented out for testing
-//mongoose.connect(process.env.MONGODB_URI || "mongodb://heroku_mf63n599:pp5dovtcjhr89fn4a7ueount1j@ds261486.mlab.com:61486/heroku_mf63n599");
-
-// Passport middleware
-app.use(passport.initialize());
-// Passport config
-require("./config/passport")(passport);
-
-//multer middleware for image uploading
-// app.post('/upload', upload.single('photo'), (req, res) => {
-//   if(req.file) {
-//     res.json(req.file);
-//   }
-//   else throw 'error';
-// })
-
-// Routes - old
-//app.use("/api/users", users);
 
 // Add routes, both API and view
 app.use(routes);

@@ -1,15 +1,26 @@
+//React
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import MainContainer from "./components/MainContainer";
+
+//Boostrap Components
+import Container from 'react-bootstrap/Container';
+
+//Pages and Components
 import Browse from './pages/Browse'
-import './App.css';
+import MainContainer from "./components/MainContainer";
+import Routes from './components/Routes';
+
+//Stylesheet
+//import './style.css';
 
 function App() {
   return (
-    <div>
-      <Browse />
-    </div>
+    <Container maxWidth="xl">
+      <Router>
+        <Routes />
+      </Router>
+    </Container>
   );
 }
 
