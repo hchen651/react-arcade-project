@@ -16,7 +16,7 @@ import Routes from './components/Routes';
 
 function App() {
   return (
-    <Container maxWidth="xl">
+    <Container fluid="true">
       <Router>
         <Routes />
       </Router>
