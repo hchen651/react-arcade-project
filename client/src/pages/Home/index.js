@@ -21,7 +21,7 @@ class Home extends React.Component {
                         <Button variant="info">Sign Up</Button>
                     </p>
                     <p>
-                        <Button variant="secondary">Try it Out!</Button>
+                        <Button variant="secondary" href="/browse">Try it Out!</Button>
                     </p>
                 </Jumbotron>
             </div>
