@@ -10,7 +10,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 class NavBar extends React.Component {
-    render () {
+    render() {
         return (
             <Navbar bg="light">
                 <Navbar.Brand href="Browse">Rearcade</Navbar.Brand>

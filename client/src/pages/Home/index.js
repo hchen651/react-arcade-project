@@ -10,14 +10,19 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <Jumbotron>
-                    <h1>Hello, world!</h1>
+                <Jumbotron style={{ 'margin-top': '20%', 'text-align': 'center' }}>
+                    <h1>REACADE.</h1>
                     <p>
-                        This is a simple hero unit, a simple jumbotron-style component for calling
-                        extra attention to featured content or information.
+                        it's like miniclip but in React
                     </p>
                     <p>
-                        <Button variant="primary">Learn more</Button>
+                        <Button variant="primary">Log In</Button>
+                    </p>
+                    <p>
+                        <Button variant="info">Sign Up</Button>
+                    </p>
+                    <p>
+                        <Button variant="secondary" href="/browse">Try it Out!</Button>
                     </p>
                 </Jumbotron>
             </div>
