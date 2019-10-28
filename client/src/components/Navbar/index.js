@@ -13,7 +13,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <Navbar bg="light">
-                <Navbar.Brand href="Browse">Rearcade</Navbar.Brand>
+                <Navbar.Brand href="Browse">Reacade</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
                     <Nav>
