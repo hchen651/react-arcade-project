@@ -20,7 +20,7 @@ class NavBar extends React.Component {
                         <NavDropdown title="User Name" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="User">User Profile</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#logout">Log Out</NavDropdown.Item>
+                            <NavDropdown.Item href="/">Log Out</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
