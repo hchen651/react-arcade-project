@@ -22,7 +22,6 @@ class Game01 extends Component {
             this.setState({ x: Math.floor(Math.random() * Math.floor(650)) })
             this.setState({ y: Math.floor(Math.random() * Math.floor(650)) });
             this.draw();
-            console.log(this.state.text);
         }
     }
 
