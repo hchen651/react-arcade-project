@@ -49,11 +49,5 @@ class Game01 extends Component {
         );
     }
 
-
-    //howto:
-    //set state object random 0-25. 
-    //set text state. 
-    //randomize location x and y on canvas. 
-    //
 }
 export default Game01;
