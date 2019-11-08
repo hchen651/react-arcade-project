@@ -28,7 +28,6 @@ class Timer extends React.Component {
         );
     }
 
-    //
     tick() {
         this.setState({
             time: this.state.time - 1
@@ -44,8 +43,6 @@ class Timer extends React.Component {
         }
     }
 
-    //pause timer when 'pause' is clicked?
-
     handleClickReset() {
         this.setState({
             isOn: false,
@@ -60,10 +57,17 @@ class Timer extends React.Component {
             <div>
                 <ButtonToolbar>
                     <h3>Time: {this.state.time}</h3>
-                    <Button variant="primary" onClick={()=> this.handleClickStart()} > 
-                        {this.state.isOn ? 'Pause' : 'Start'} 
+                    <Button 
+                        variant="primary" 
+                        disabled={this.state.isOn}
+                        onClick={()=> this.handleClickStart()} 
+                    > 
+                        Start
                     </Button>
-                    <Button variant="secondary" onClick={()=> this.handleClickReset()}>
+                    <Button 
+                        variant="secondary" 
+                        onClick={()=> this.handleClickReset()}
+                    >
                         Reset
                     </Button>
                 </ButtonToolbar>
