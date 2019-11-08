@@ -4,13 +4,12 @@ import React from 'react';
 //Components
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Button from 'react-bootstrap/Button';
-import { runInThisContext } from 'vm';
 
 class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            time: 30,
+            time: 5,
             isOn: false,
         }
 
@@ -20,22 +19,37 @@ class Timer extends React.Component {
 
     handleClickStart() {
         this.setState({
+            time: 5,
             isOn: !this.state.isOn,
         });
         
         this.timeInterval = setInterval(
-            () => this.setState({time: this.state.time - 1}) , 1000
+            () => this.tick() , 1000
         );
-
-        //pause timer when 'pause' is clicked
-
-        //ends timer at 0
     }
+
+    //
+    tick() {
+        this.setState({
+            time: this.state.time - 1
+        });
+
+        if (this.state.time == 0) {
+            this.setState({
+                isOn: false,
+            });
+            clearInterval(this.timeInterval);
+            console.log("time's up");
+            console.log(this.state.isOn);
+        }
+    }
+
+    //pause timer when 'pause' is clicked?
 
     handleClickReset() {
         this.setState({
             isOn: false,
-            time: 30,
+            time: 5,
         });
 
         clearInterval(this.timeInterval);
@@ -48,7 +62,6 @@ class Timer extends React.Component {
                     <h3>Time: {this.state.time}</h3>
                     <Button variant="primary" onClick={()=> this.handleClickStart()} > 
                         {this.state.isOn ? 'Pause' : 'Start'} 
-                        {console.log(this.state.isOn)}
                     </Button>
                     <Button variant="secondary" onClick={()=> this.handleClickReset()}>
                         Reset
