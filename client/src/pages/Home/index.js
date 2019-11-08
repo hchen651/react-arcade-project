@@ -93,28 +93,43 @@ class Home extends React.Component {
                                         <Form.Control type="password" placeholder="Confirm Your Password" />
                                     </Form.Group>
 
+                                    <Form.Group controlId="avatarSelect"></Form.Group>
+                                    <Form.Label>Choose an Avatar:</Form.Label>
                                     <Form.Row>
-                                        {['radio'].map(type => (
-                                            <div key={`custom-inline-${type}`} className="mb-3">
-                                                <Form.Check
-                                                    custom
-                                                    inline
-                                                    label="1"
-                                                    type={type}
-                                                    id={`custom-inline-${type}-1`}
-                                                />
-                                                <Form.Check
-                                                    custom
-                                                    inline
-                                                    label="2"
-                                                    type={type}
-                                                    id={`custom-inline-${type}-2`}
-                                                />
-                                            </div>
-                                        ))}
+                                        <Form.Check
+                                            inline
+                                            label="1"
+                                            type="radio"
+                                        />
+                                        <Form.Check
+                                            inline
+                                            label="2"
+                                            type="radio"
+                                        />
+                                        <Form.Check
+                                            inline
+                                            label="3"
+                                            type="radio"
+                                        />
+                                        <Form.Check
+                                            inline
+                                            label="4"
+                                            type="radio"
+                                        />
+                                        <Form.Check
+                                            inline
+                                            label="5"
+                                            type="radio"
+                                        />
+                                        <Form.Check
+                                            inline
+                                            label="6"
+                                            type="radio"
+                                        />
                                     </Form.Row>
+                                    <br />
 
-                                    <Button variant="primary" type="submit">Log In</Button>
+                                    <Button variant="primary" type="submit">Register</Button>
                                 </Form>
                             </Modal.Body>
                         </Modal>
