@@ -10,7 +10,7 @@ class Timer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            time: 0,
+            time: 30,
             isOn: false,
         }
 
@@ -24,14 +24,18 @@ class Timer extends React.Component {
         });
         
         this.timeInterval = setInterval(
-            () => this.setState({time: this.state.time + 1}) , 1000
+            () => this.setState({time: this.state.time - 1}) , 1000
         );
+
+        //pause timer when 'pause' is clicked
+
+        //ends timer at 0
     }
 
     handleClickReset() {
         this.setState({
             isOn: false,
-            time: 0,
+            time: 30,
         });
 
         clearInterval(this.timeInterval);
