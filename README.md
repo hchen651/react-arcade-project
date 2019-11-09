@@ -35,6 +35,7 @@ _(content pending)_
 - Front-End
     - [ReactJS](https://reactjs.org/)
     - [React-Bootstrap](https://react-bootstrap.netlify.com/)
+    - [React-Coverflow](https://github.com/andyyou/react-coverflow)
     - [FontAwesome](https://fontawesome.com/?from=io)
     - [Google Fonts](https://fonts.google.com/)
     - [Redux](https://redux.js.org/)
